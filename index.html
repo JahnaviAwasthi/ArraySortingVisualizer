@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-color: black;">
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of array: (max. 200)</p>
+                <input id="a_size" min=0 max=200 step=1 value=24>
+                <p class="speeda">Speed of Algorithm: </p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting Visualizer</p>
+                <button id="a_generate">Generate New Array!</button>
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="LeftSide">
+            <img src="big-oh.jpg">
+        </div>
+
+        <div id="flexdir" style="display: flex; flex-direction: column-reverse;">
+            
+            <div id="array_container" style="color: black;">
+            
+            </div>
+        
+        </div>
+
+        <div id="RightSide">
+            <img src="omega.jpg">
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="./js/main.js"></script>                    <!--Should be loaded first-->
+
+    <script src="./js/visuals.js"></script>                 <!--Should be loaded after main.js-->
+
+    <script src="./js/bubble.js"></script>
+    <script src="./js/selection.js"></script>
+    <script src="js/insertion.js"></script>
+    <script src="js/merge.js"></script>
+</body>
+
+</body>
+</html>
